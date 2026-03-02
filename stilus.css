@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+    justify-content: center;
+    gap: 40px;
+    margin-top: 60px;          
+}
+
+section a img:hover{
+    border: 5px solid rgb(232, 232, 240);
+    width: 200px;
+    height: 200px;
+}
+
+main h1{
+    text-align: center;
+    padding: 20px;
+    font-size: 70px;
+    font-weight: lighter;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(143, 139, 139);
+}
+
+.profile{
+    text-align: center;
+    cursor: pointer;
+}
+
+.profile img{
+    width: 200px;
+    height: 200px;
+    border-radius: 3px;
+    object-fit: cover;
+}
+
+.manage{
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgb(109, 109, 110);
+    max-width: 30%;
+    padding: 10px 25px;
+    margin-top: 30px;
+    font-size: 18px;
+    color: rgb(109, 109, 110);
+}
+
+.manage:hover{
+    border: 1px solid rgb(192, 190, 190);
+    color: rgb(192, 190, 190);
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+}
+
+
+@media (max-width: 900px) {
+    section {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    section {
+        grid-template-columns: repeat(auto-fit, 150px);
+        gap: 15px;
+    }
+    .profile img {
+        width: 150px;
+        height: 150px;
+    }
+    .manage {
+        font-size: 14px;
+    }
+}
